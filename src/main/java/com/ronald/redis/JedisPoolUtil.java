@@ -35,7 +35,9 @@ public class JedisPoolUtil {
 
     public static void close(Jedis jedis){
         if(pool != null && jedis != null){
+//           已过时
 //            pool.returnResource(jedis);
+
             jedis.close();
         }
     }
